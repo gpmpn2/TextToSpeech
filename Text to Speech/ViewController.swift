@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func translateToSpeech(_ sender: Any) {
         let utterance = AVSpeechUtterance(string: textView.text)
         utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        utterance.rate = 0.1
+        utterance.rate = 0.5
         
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
